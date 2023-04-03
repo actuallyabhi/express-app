@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>blogs</title>
+</head>
+<body>
+  <h1>Blogs</h1>
+    <ul>
+            <% blogs.forEach((item)=>{%>
+                <li>
+                   <h1><%=item.title%></h1>
+                   <p> <%=item.description%></p>
+                </li>
+                <%});%>
+        </ul>
+</body>
+</html>
