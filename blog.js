@@ -16,12 +16,8 @@ let blogs = [
 ]
 
 // Get a blog 
-
 router.get("/", (req,res) => {
-  res.render('index',{
-    title: "kkk",
-    blogs: blogs
-  })
+ res.json(blogs)
 })
 
 router.post("/", (req,res) => {
